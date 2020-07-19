@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
+    <script src="ctrl.js"></script>
+    <link rel="stylesheet" type="text/css" href="story.css">
+</head>
+<html>
+<body>
+    <div ng-app="story" ng-controller="myCtrl">
+        <div class="row top">
+            <h1>How Content drove the Netflix growth story!</h1>
+        </div>
+        <div class="row">
+            <div class="columnLeft">
+                <div id="scene1">
+                    <p>
+                        Netflix started as a DVD rental business but its founders never wanted it to be their company's destination.
+                        Its founders saw internet as a medium to decentralize entertainment and unbundle premium television
+                        from the grip of big cable companies.
+                    </p>
+                        In 1997, Netflix launched a video library of approximately 900 titles.By April 1999, it's video library expanded to 3100 titles and
+                        by January 2000 it had 5200 titles. 
+                    <p>
+                        In 2007 Netflix launches it's online streaming platform "Watch Now". This laid the 
+                        foundation stone of the behemoth that Netflix was to become in the coming years and this is where out story begins. 
+                     </p>
+                    <p>
+                        Once internet became their primary delivery medium, Netflix understood the importance of continously adding
+                        content to its library so that people don't run out of things to watch and this became the primary reason 
+                        for their unprecedented subscriber base growth.
+                    </p>
+                </div>
+                <div id="scene2" class="noShow">
+                    <p>
+                        Netflix had invested $40M in the development of new streaming technologies in 2007,
+                        the year when Netflix launched its streaming service "Watch Now", even though it's core business of DVD rentals was growing.
+                    </p>
+                    <p>
+                        Because hardly anybody thought it would work, even fewer companies actively pursued it.
+                        By the time everybody else caught on, Netflix had the best streaming technology and the largest library of titles.
+                    </p>
+                    <p>
+                        The company was also able to negotiate cheap licensing deals with networks like Starz and in 2008 it gave Netflix
+                        access to 2500 titles from the network.
+                    </p>
+                    <p>
+                        By 2012, Netflix’s relationships with several studios and media publishers had become strained and the deal it had with Starz
+                        was canceled. Netflix lost access to 2500 titles that it was able to add to it's list from this deal.
+                    </p>
+                    <p>
+                        This set the stage for the most important transformation that Netflix was about to go through, from a content delivery 
+                        platform to one of the largest content creator in the world.
+                    </p>
+                </div>
+                <div id="scene3" class="noShow">
+                    <p>
+                        2013 saw Netflix dive headfirst into the world of original programming with its high-profile political drama, House of Cards.
+                        Netflix had finally begun to realize its ambitions of being a one-stop-shop for original content,
+                        distributed via Netflix’s proprietary platform
+                    </p>
+                    <p>
+                        Although transitioning from licensing content to producing its own movies and TV shows might seem counterintuitive for an engineering company,
+                        it made perfect sense for Netflix. The more content Netflix produced, the more subscribers it attracted.
+                        This, in turn, resulted in higher revenues, which meant more funding for original content in a virtuous cycle of constant growth.
+                    </p>
+                    <p>
+                        In 2016, Netflix went live in 130 counties simultaneously and in 2017 it's subscriber count surpassed that of all the cable networks combined in the US.
+                    </p>
+                    <p>
+                        All this while Netflix was investing the most in acquiring/creating content by as much as double the amount its competitors were investing. 
+                        It's aggressive approach in adding content to it's platform was only paralleled by the it's subscriber base growth. 
+                    </p>
+                </div>
+            </div>
+            <div class="columnRight">
+                <div id="sceneView">
+                    <div id="sceneTriggers">
+                        <button ng-click="selectTrigger('scene1')" id="btnScene1" class="btnTrigger first depressed">until 2007</button>
+                        <button ng-click="selectTrigger('scene2')" id="btnScene2" class="btnTrigger second">2007 - 2012</button>
+                        <button ng-click="selectTrigger('scene3')" id="btnScene3" class="btnTrigger third">2013 - Present</button>
+                    </div>
+                    <div id="sceneGraph">
+                        <svg>
+
+                        </svg>
+                    </div>
+                </div>
+                <div id="references">
+                    <h3>References</h3>
+                    <a href="https://producthabits.com/how-netflix-became-a-100-billion-company-in-20-years/">
+                        https://producthabits.com/how-netflix-became-a-100-billion-company-in-20-years/
+                    </a>
+                    <br />
+                    <a href="https://en.wikipedia.org/wiki/Netflix">
+                        https://en.wikipedia.org/wiki/Netflix
+                    </a>
+                    <br />
+                    <a href="https://www.kaggle.com/subinium/storytelling-with-data-netflix-ver">
+                        https://www.kaggle.com/subinium/storytelling-with-data-netflix-ver
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
