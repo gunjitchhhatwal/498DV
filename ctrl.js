@@ -65,7 +65,7 @@ app.controller('myCtrl', function ($scope) {
             },
             {
                 note: {
-                    label: "House of cards released",
+                    label: "House of cards produced",
                     title: "",
                     align: "middle"
                 },
